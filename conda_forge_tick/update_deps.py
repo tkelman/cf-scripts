@@ -760,7 +760,7 @@ def _env_dep_comparison_to_patches(
 
 
 def is_expression_requirement(dep: str) -> bool:
-    return dep.startswith(r"${{")
+    return dep.startswith(r"\${{")
 
 
 def _apply_env_dep_comparison(
